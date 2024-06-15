@@ -64,7 +64,16 @@ label {
   grid-row: 3;
   grid-column: 3 / -1;
 }
-
+#front-card {
+  width: 28rem;
+  height: 15rem;
+  background: url("../images/bg-card-front.png") no-repeat;
+}
+#back-card {
+  background: url("../images/bg-card-back.png") no-repeat;
+  width: 28rem;
+  height: 15rem;
+}
 #submit-btn {
   grid-row: 4;
   grid-column: 1 / -1;
