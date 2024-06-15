@@ -14,48 +14,45 @@
 body {
   height: 100vh;
   height: 100svh;
-  /* width: 100%; */
   display: grid;
-  /* place-content: center; */
-  /* justify-content: center;
-  align-items: center; */
 }
 
 main {
   height: 100%;
-  min-width: 100%;
+  /* min-width: 100%; */
   display: grid;
   place-content: center;
 
-  /* display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center; */
-
   background-color: var(--white);
+  grid-template-rows: 1fr 2fr;
+  /* grid-template-columns: 1fr; */
 }
 
 #form-con {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-inline-start: 21.8rem;
-  margin-inline-end: 14.2rem;
+  /* Desktop */
+  /* margin-inline-start: 21.8rem; */
+  /* margin-inline-end: 14.2rem; */
+  /* Mobile */
+  margin-inline-start: 0rem;
+  margin-inline-end: 0rem;
+
+  /* grid-row: 1;
+  grid-column: 2; */
 }
 #card-form {
-  /* height: 100%; */
   display: grid;
   grid-template-rows: repeat(4, minmax(0, 1fr));
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  /* place-content: center; */
-  /* flex: 2; */
+
   gap: 1.5rem;
 }
 
 label {
   font-size: 0.8rem;
   letter-spacing: 0.1rem;
-  /* place-content: center; */
   gap: 0.2rem;
   color: var(--very-dark-violet);
   display: grid;
@@ -70,11 +67,11 @@ label > input {
 }
 
 #card-display {
-  /* flex: 1; */
-  /* min-height: 100%; */
-  /* block-size: 100%; */
   position: relative;
   background-color: var(--very-dark-violet);
+
+  /* grid-row: 1;
+  grid-column: 1; */
 }
 #card-name-lab {
   grid-row: 1;
@@ -97,8 +94,6 @@ label > input {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.4rem;
   margin-inline-end: 0.5rem;
-
-  /* gap: 3rem; */
 }
 #card-date-lab > input {
   padding-block: 0.5rem;
@@ -130,8 +125,7 @@ label > input {
   z-index: 1;
   left: 10.2rem;
   top: 11.7rem;
-  /* margin-block: 2rem; */
-  /* margin-inline: 1rem; */
+
   padding-inline: 2rem;
   padding-block: 1.8rem;
   width: 28rem;
@@ -150,7 +144,6 @@ label > input {
   font-size: 2.05rem;
   word-spacing: 0.2rem;
   margin-block-end: 1rem;
-  /* letter-spacing: -0.01rem; */
 }
 #back-card {
   position: absolute;
@@ -165,7 +158,6 @@ label > input {
   align-items: center;
 }
 #back-card-cvc {
-  /* flex: 1; */
   color: var(--white);
   margin: auto;
   font-size: 0.95rem;
@@ -188,7 +180,7 @@ label > input {
 @media (min-width: 35rem) {
   main {
     grid-template-rows: 1fr;
-    grid-template-columns: 0.505fr 1fr;
+    grid-template-columns: 1fr 2fr;
   }
   #card-display {
     grid-row: 1;
