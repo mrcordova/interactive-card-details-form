@@ -1,7 +1,16 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-grayish-violet: hsl(270, 3%, 87%);
+  --dark-grayish-violet: hsl(279, 6%, 55%);
+  --very-dark-violet: hsl(278, 68%, 11%);
+}
+
 body {
   height: 100vh;
   height: 100svh;
-  display: flex;
+  /* width: 100%; */
+  display: grid;
+  /* place-content: center; */
   /* justify-content: center;
   align-items: center; */
 }
@@ -9,10 +18,15 @@ body {
 main {
   height: 100%;
   min-width: 100%;
-  display: flex;
+  display: grid;
+  place-content: center;
+
+  /* display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
+
+  background-color: var(--white);
 }
 #card-form {
   display: grid;
@@ -28,6 +42,9 @@ label {
 }
 #card-display {
   /* flex: 1; */
+  /* min-height: 100%; */
+  /* block-size: 100%; */
+  background-color: var(--very-dark-violet);
 }
 #card-name-lab {
   grid-row: 1;
@@ -77,4 +94,20 @@ label {
 #submit-btn {
   grid-row: 4;
   grid-column: 1 / -1;
+}
+
+@media (min-width: 35rem) {
+  main {
+    grid-template-rows: 1fr;
+    grid-template-columns: 0.8fr 1fr;
+  }
+  #card-display {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  #form-con {
+    grid-row: 1;
+    grid-column: 2;
+  }
 }
