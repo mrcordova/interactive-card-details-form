@@ -28,11 +28,18 @@ main {
 
   background-color: var(--white);
 }
+
+#form-con {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 #card-form {
+  /* height: 100%; */
   display: grid;
   grid-template-rows: repeat(4, minmax(0, 1fr));
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  /* place-content: safe center; */
+  /* place-content: center; */
   /* flex: 2; */
   /* gap: 1rem; */
 }
