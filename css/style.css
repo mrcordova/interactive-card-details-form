@@ -106,7 +106,7 @@ label {
 @media (min-width: 35rem) {
   main {
     grid-template-rows: 1fr;
-    grid-template-columns: 0.8fr 1fr;
+    grid-template-columns: 0.5fr 1fr;
   }
   #card-display {
     grid-row: 1;
