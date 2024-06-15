@@ -79,7 +79,13 @@ label > input {
 }
 
 #card-logo {
-  margin-block-end: 3.6rem;
+  /* Mobile */
+  margin-block-end: 2.1rem;
+  width: 3.3rem;
+  /* Desktop */
+  /* width: 5.25rem; */
+  /* height: 2.9375rem; */
+  /* margin-block-end: 3.6rem; */
 }
 
 #card-num-lab {
@@ -127,8 +133,8 @@ label > input {
   /* Mobile */
   left: 0.7rem;
   top: 7.9rem;
-  padding-inline: 2rem;
-  padding-block: 1.8rem;
+  padding-inline: 1.3rem;
+  padding-block: 1.1rem;
   width: 18rem;
   height: 9.8rem;
   /* Desktop */
@@ -143,15 +149,24 @@ label > input {
 
 #front-card-details {
   display: flex;
-
   justify-content: space-between;
+  /* Mobike */
+  font-size: 0.6rem;
   letter-spacing: 0.06rem;
+  /* Desktop */
+  /* font-size: 1rem; */
+  /* letter-spacing: 0.06rem; */
 }
 
 #front-card-num {
-  font-size: 2.05rem;
+  /* Mobile */
+  font-size: 1.3rem;
   word-spacing: 0.2rem;
-  margin-block-end: 1rem;
+  margin-block-end: 0.7rem;
+  /* Desktop */
+  /* font-size: 2.05rem; */
+  /* word-spacing: 0.2rem; */
+  /* margin-block-end: 1rem; */
 }
 #back-card {
   position: absolute;
