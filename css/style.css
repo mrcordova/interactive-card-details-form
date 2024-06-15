@@ -53,6 +53,9 @@ main {
 }
 
 label {
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  color: var(--very-dark-violet);
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
