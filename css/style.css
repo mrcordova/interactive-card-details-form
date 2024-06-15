@@ -99,6 +99,7 @@ label {
   grid-column: 3 / -1;
 }
 #front-card {
+  color: var(--white);
   margin-block: 2rem;
   margin-inline: 1rem;
   padding-inline: 2rem;
@@ -110,8 +111,15 @@ label {
 
 #front-card-details {
   display: flex;
+
   justify-content: space-between;
-  font-size: 1.05rem;
+  letter-spacing: 0.06rem;
+}
+
+#front-card-num {
+  font-size: 2.05rem;
+  word-spacing: 0.2rem;
+  /* letter-spacing: -0.01rem; */
 }
 #back-card {
   background: url("../images/bg-card-back.png") no-repeat;
