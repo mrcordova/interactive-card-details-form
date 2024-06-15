@@ -39,6 +39,8 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-inline-start: 21.8rem;
+  margin-inline-end: 14rem;
 }
 #card-form {
   /* height: 100%; */
@@ -52,6 +54,7 @@ main {
 
 label {
   display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 #card-display {
   /* flex: 1; */
@@ -98,7 +101,9 @@ label {
 #cvc-lab {
   grid-row: 3;
   grid-column: 3 / -1;
+  /* grid-template-rows: repeat(2, minmax(0, 1fr)); */
 }
+
 #front-card {
   position: absolute;
   color: var(--white);
