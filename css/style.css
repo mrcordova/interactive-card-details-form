@@ -81,7 +81,7 @@ label > input {
 #card-logo {
   /* Mobile */
   margin-block-end: 2.1rem;
-  width: 3.3rem;
+  width: 3.5rem;
   /* Desktop */
   /* width: 5.25rem; */
   /* height: 2.9375rem; */
@@ -131,11 +131,11 @@ label > input {
   z-index: 1;
 
   /* Mobile */
-  left: 0.7rem;
+  left: 0.8rem;
   top: 7.9rem;
-  padding-inline: 1.3rem;
+  padding-inline: 1.4rem;
   padding-block: 1.1rem;
-  width: 18rem;
+  width: 18.1rem;
   height: 9.8rem;
   /* Desktop */
   /* left: 10.2rem; */
@@ -170,24 +170,37 @@ label > input {
 }
 #back-card {
   position: absolute;
-  left: 16.15rem;
-  top: 29.3rem;
-  background: url("../images/bg-card-back.png") no-repeat;
-  z-index: 0;
-  width: 28.1rem;
-  height: 15.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: center / contain no-repeat url("../images/bg-card-back.png");
+  z-index: 0;
+  /* Mobile */
+  left: 4.5rem;
+  top: 2rem;
+  width: 17.8rem;
+  height: 10rem;
+  /* Desktop */
+  /* left: 16.15rem; */
+  /* top: 29.3rem; */
+  /* width: 28.1rem; */
+  /* height: 15.5rem; */
 }
 #back-card-cvc {
   color: var(--white);
   margin: auto;
-  font-size: 0.95rem;
-  height: 1.7rem;
-  width: 20.5rem;
+  /* Mobile */
+  font-size: 0.7rem;
+  height: 1.2rem;
+  width: 13.5rem;
   text-align: right;
   letter-spacing: 0.1rem;
+  /* Desktop */
+  /* font-size: 0.95rem; */
+  /* height: 1.7rem; */
+  /* width: 20.5rem; */
+  /* text-align: right; */
+  /* letter-spacing: 0.1rem; */
 }
 #submit-btn {
   grid-row: 4;
