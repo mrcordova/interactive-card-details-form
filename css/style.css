@@ -125,7 +125,18 @@ label {
 #back-card {
   background: url("../images/bg-card-back.png") no-repeat;
   width: 28rem;
-  height: 15.5rem;
+  height: 15.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#back-card-cvc {
+  color: var(--white);
+  margin: auto;
+  font-size: 0.95rem;
+  height: 1.7rem;
+  width: 20.5rem;
+  text-align: right;
 }
 #submit-btn {
   grid-row: 4;
