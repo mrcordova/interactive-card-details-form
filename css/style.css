@@ -177,9 +177,9 @@ label > input {
   z-index: 0;
   /* Mobile */
   left: 4.5rem;
-  top: 2rem;
-  width: 17.8rem;
-  height: 10rem;
+  top: 1.9rem;
+  width: 17.9rem;
+  height: 10.1rem;
   /* Desktop */
   /* left: 16.15rem; */
   /* top: 29.3rem; */
@@ -190,11 +190,12 @@ label > input {
   color: var(--white);
   margin: auto;
   /* Mobile */
-  font-size: 0.7rem;
-  height: 1.2rem;
+  font-size: 0.6rem;
+  height: 1rem;
   width: 13.5rem;
   text-align: right;
   letter-spacing: 0.1rem;
+  vertical-align: middle;
   /* Desktop */
   /* font-size: 0.95rem; */
   /* height: 1.7rem; */
