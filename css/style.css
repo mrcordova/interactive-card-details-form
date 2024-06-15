@@ -57,6 +57,7 @@ label {
   /* flex: 1; */
   /* min-height: 100%; */
   /* block-size: 100%; */
+  position: relative;
   background-color: var(--very-dark-violet);
 }
 #card-name-lab {
@@ -99,9 +100,13 @@ label {
   grid-column: 3 / -1;
 }
 #front-card {
+  position: absolute;
   color: var(--white);
-  margin-block: 2rem;
-  margin-inline: 1rem;
+  z-index: 1;
+  left: 10.2rem;
+  top: 11.7rem;
+  /* margin-block: 2rem; */
+  /* margin-inline: 1rem; */
   padding-inline: 2rem;
   padding-block: 1.8rem;
   width: 28rem;
@@ -123,20 +128,26 @@ label {
   /* letter-spacing: -0.01rem; */
 }
 #back-card {
+  position: absolute;
+  left: 16.15rem;
+  top: 29.3rem;
   background: url("../images/bg-card-back.png") no-repeat;
-  width: 28rem;
-  height: 15.4rem;
+  z-index: 0;
+  width: 28.1rem;
+  height: 15.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 #back-card-cvc {
+  /* flex: 1; */
   color: var(--white);
   margin: auto;
   font-size: 0.95rem;
   height: 1.7rem;
   width: 20.5rem;
   text-align: right;
+  letter-spacing: 0.1rem;
 }
 #submit-btn {
   grid-row: 4;
@@ -146,7 +157,7 @@ label {
 @media (min-width: 35rem) {
   main {
     grid-template-rows: 1fr;
-    grid-template-columns: 0.5fr 1fr;
+    grid-template-columns: 0.505fr 1fr;
   }
   #card-display {
     grid-row: 1;
