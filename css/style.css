@@ -5,6 +5,12 @@
   --very-dark-violet: hsl(278, 68%, 11%);
 }
 
+.space-grotesk-500 {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
 body {
   height: 100vh;
   height: 100svh;
@@ -58,6 +64,10 @@ label {
   grid-column: 1 / -1;
 }
 
+#card-logo {
+  /* margin-block-end: 4rem; */
+}
+
 #card-num-lab {
   grid-row: 2;
   grid-column: 1 / -1;
@@ -91,16 +101,22 @@ label {
 #front-card {
   margin-block: 2rem;
   margin-inline: 1rem;
-  padding-inline: 1.5rem;
-  padding-block: 1rem;
+  padding-inline: 2rem;
+  padding-block: 1.8rem;
   width: 28rem;
   height: 15.5rem;
   background: url("../images/bg-card-front.png") no-repeat;
 }
+
+#front-card-details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.05rem;
+}
 #back-card {
   background: url("../images/bg-card-back.png") no-repeat;
   width: 28rem;
-  height: 15rem;
+  height: 15.5rem;
 }
 #submit-btn {
   grid-row: 4;

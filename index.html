@@ -13,6 +13,11 @@
 
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet" />
 
     <title>Frontend Mentor | Interactive card details form</title>
 
@@ -27,14 +32,14 @@
       }
     </style>
   </head>
-  <body>
+  <body class="space-grotesk-500">
     <main>
       <div id="card-display">
         <div id="front-card">
-          <img src="./images/card-logo.svg" alt="card logo" />
+          <img id="card-logo" src="./images/card-logo.svg" alt="card logo" />
           <p>0000 0000 0000 0000</p>
-          <div>
-            <p>Jane Appleseed</p>
+          <div id="front-card-details">
+            <p>JANE APPLESEED</p>
             <p>00/00</p>
           </div>
         </div>
