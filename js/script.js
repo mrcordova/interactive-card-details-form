@@ -42,17 +42,19 @@ cvcInput.addEventListener("input", (e) => {
 });
 
 expMInput.addEventListener("input", (e) => {
-  const displayMon = document.getElementById("front-card-date");
-  console.log(expYInput.value || "00");
-  displayMon.textContent = `${
-    (expMInput.value || "00") +
-    displayMon.textContent.slice(0, Math.min(expMInput.value.length, 2))
-  }/${expYInput.value || "00"}`;
+  const displayDate = document.getElementById("front-card-date");
+
+  displayDate.textContent = displayDate.textContent.replace(
+    displayDate.textContent.slice(0, displayDate.textContent.indexOf("/")),
+    expMInput.value || "00"
+  );
 });
 
 expYInput.addEventListener("input", (e) => {
-  const displayMon = document.getElementById("front-card-date");
-  displayMon.textContent = `${expMInput.value || "00"}/${
-    expYInput.value + displayMon.textContent.slice(4)
-  }`;
+  const displayDate = document.getElementById("front-card-date");
+
+  displayDate.textContent =
+    displayDate.textContent.substring(0, displayDate.textContent.indexOf("/")) +
+    "/" +
+    (expYInput.value || "00");
 });
