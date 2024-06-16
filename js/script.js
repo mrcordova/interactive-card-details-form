@@ -13,6 +13,7 @@ const cvcInput = document.getElementById("cvc");
 const expMInput = document.getElementById("exp-date-m");
 const expYInput = document.getElementById("exp-date-y");
 const submitBtn = document.getElementById("submit-btn");
+
 const errorObj = {
   valueMissing: "Can't be blank",
   patternMismatch: "Wrong format, numbers only",
@@ -69,8 +70,7 @@ submitBtn.addEventListener("click", (e) => {
   e.preventDefault();
   const labs = document.querySelectorAll("label");
   const form = document.getElementById("card-form");
-  const completeDiv = document.querySelector("complete-div");
-  const formDiv = document.getElementById("form-con");
+  const completeDiv = document.querySelector(".complete-div");
 
   for (const lab of labs) {
     const inputs = lab.querySelectorAll("input");
@@ -87,6 +87,7 @@ submitBtn.addEventListener("click", (e) => {
     }
   }
 
+  console.log(completeDiv);
   completeDiv.classList.toggle("hide", !form.checkValidity());
   if (form.checkValidity()) {
     form.style.display = "none";
