@@ -8,10 +8,15 @@ const {
 } = cleaveZen;
 
 const input = document.getElementById("card-num");
+
 input.addEventListener(
   "input",
   () => (input.value = formatNumber(input.value.replaceAll(" ", "")))
 );
+input.addEventListener("input", (e) => {
+  const diplayNum = document.getElementById("front-card-num");
+  diplayNum.textContent = `${input.value}`;
+});
 
 const formatNumber = (number) =>
   number.split("").reduce((seed, next, index) => {
