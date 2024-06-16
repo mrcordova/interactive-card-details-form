@@ -54,8 +54,10 @@ main {
   display: grid;
   grid-template-rows: repeat(4, minmax(0, 1fr));
   grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  gap: clamp(1.2rem, 1.0944rem + 0.4507vw, 1.5rem);
   /* Mobile */
-  gap: 1.2rem;
+  /* gap: 1.2rem; */
   /* Desktop */
   /* gap: 1.5rem; */
 }
@@ -91,9 +93,11 @@ label > input {
 }
 
 #card-logo {
+  margin-block-end: clamp(2.1rem, 1.5718rem + 2.2535vw, 3.6rem);
+  width: clamp(3.5rem, 2.8838rem + 2.6291vw, 5.25rem);
   /* Mobile */
-  margin-block-end: 2.1rem;
-  width: 3.5rem;
+  /* margin-block-end: 2.1rem; */
+  /* width: 3.5rem; */
   /* Desktop */
   /* width: 5.25rem; */
   /* height: 2.9375rem; */
@@ -142,13 +146,19 @@ label > input {
   color: var(--white);
   z-index: 1;
 
+  left: clamp(0.8rem, -2.5099rem + 14.1221vw, 10.2rem);
+  top: clamp(7.9rem, 6.562rem + 5.7089vw, 11.7rem);
+  padding-inline: clamp(1.4rem, 1.1887rem + 0.9014vw, 2rem);
+  padding-block: clamp(1.1rem, 0.8535rem + 1.0516vw, 1.8rem);
+  width: clamp(18.1rem, 14.6141rem + 14.8732vw, 28rem);
+  height: clamp(9.8rem, 7.793rem + 8.5634vw, 15.5rem);
   /* Mobile */
-  left: 0.8rem;
-  top: 7.9rem;
-  padding-inline: 1.4rem;
-  padding-block: 1.1rem;
-  width: 18.1rem;
-  height: 9.8rem;
+  /* left: 0.8rem; */
+  /* top: 7.9rem; */
+  /* padding-inline: 1.4rem; */
+  /* padding-block: 1.1rem; */
+  /* width: 18.1rem; */
+  /* height: 9.8rem; */
   /* Desktop */
   /* left: 10.2rem; */
   /* top: 11.7rem; */
@@ -162,19 +172,26 @@ label > input {
 #front-card-details {
   display: flex;
   justify-content: space-between;
-  /* Mobike */
-  font-size: 0.6rem;
+
+  font-size: clamp(0.6rem, 0.4592rem + 0.6009vw, 1rem);
   letter-spacing: 0.06rem;
+
+  /* Mobike */
+  /* font-size: 0.6rem; */
+  /* letter-spacing: 0.06rem; */
   /* Desktop */
   /* font-size: 1rem; */
   /* letter-spacing: 0.06rem; */
 }
 
 #front-card-num {
-  /* Mobile */
-  font-size: 1.3rem;
+  font-size: clamp(1.3rem, 1.0359rem + 1.1268vw, 2.05rem);
   word-spacing: 0.2rem;
-  margin-block-end: 0.7rem;
+  margin-block-end: clamp(0.7rem, 0.5944rem + 0.4507vw, 1rem);
+  /* Mobile */
+  /* font-size: 1.3rem; */
+  /* word-spacing: 0.2rem; */
+  /* margin-block-end: 0.7rem; */
   /* Desktop */
   /* font-size: 2.05rem; */
   /* word-spacing: 0.2rem; */
