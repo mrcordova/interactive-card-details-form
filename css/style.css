@@ -33,6 +33,7 @@ main {
   grid-template-rows: 1fr 2fr;
   /* grid-template-columns: 1fr; */
 }
+
 .input-error-border {
   border: 1px solid var(--red-input-errors);
 }
@@ -68,6 +69,10 @@ main {
   /* gap: 1.2rem; */
   /* Desktop */
   /* gap: 1.5rem; */
+}
+
+.hide {
+  display: none;
 }
 
 label {

@@ -68,6 +68,9 @@ expYInput.addEventListener("input", (e) => {
 submitBtn.addEventListener("click", (e) => {
   e.preventDefault();
   const labs = document.querySelectorAll("label");
+  const form = document.getElementById("card-form");
+  const completeDiv = document.getElementById("complete-div");
+  const formDiv = document.getElementById("form-con");
 
   for (const lab of labs) {
     const inputs = lab.querySelectorAll("input");
@@ -82,5 +85,10 @@ submitBtn.addEventListener("click", (e) => {
         }
       }
     }
+  }
+
+  completeDiv.classList.toggle("hide", !form.checkValidity());
+  if (form.checkValidity()) {
+    form.style.display = "none";
   }
 });
