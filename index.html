@@ -19,6 +19,8 @@
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
       rel="stylesheet" />
 
+    <script src="https://unpkg.com/cleave-zen@0.0.17/dist/cleave-zen.umd.js"></script>
+    <script defer src="js/script.js"></script>
     <title>Frontend Mentor | Interactive card details form</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -48,43 +50,70 @@
         </div>
       </div>
       <div id="form-con">
-        <form id="card-form">
+        <form id="card-form" novalidate>
           <label id="card-name-lab">
             CARDHOLDER NAME
             <input
+              required
               type="text"
               id="card-name"
+              autocomplete="cc-name"
               placeholder="e.g. Jane Appleseed" />
-            <span class="input-error-text"></span>
+            <span aria-label="input error" class="input-error-text"></span>
           </label>
           <label id="card-num-lab">
             CARD NUMBER
             <input
+              required
               type="text"
-              name=""
               id="card-num"
+              type="tel"
+              inputmode="numeric"
+              pattern="[0-9\s]{13,19}"
+              autocomplete="cc-number"
+              maxlength="19"
               placeholder="e.g. 1234 5678 9123 0000" />
-            <span class="input-error-text"></span>
+            <span aria-label="input error" class="input-error-text"></span>
           </label>
           <label id="card-date-lab">
             <p>EXP. DATE (MM/YY)</p>
             <input
+              required
               type="text"
               id="exp-date-m"
+              type="tel"
+              inputmode="numeric"
+              pattern="[0-9\s]{2}"
+              autocomplete="cc-exp-month"
+              maxlength="2"
               placeholder="MM"
               aria-label="expiration-date month" />
             <input
+              required
               type="text"
               name="exp-date"
+              type="tel"
+              inputmode="numeric"
+              pattern="[0-9\s]{2}"
+              autocomplete="cc-exp-year"
+              maxlength="2"
               id="exp-date-y"
               placeholder="YY"
               aria-label="expiration-date year" />
-            <span class="input-error-text"></span>
+            <span aria-label="input error" class="input-error-text"></span>
           </label>
           <label id="cvc-lab">
             CVC
-            <input type="text" id="cvc" placeholder="e.g. 123" />
-            <span class="input-error-text"></span>
+            <input
+              required
+              id="cvc"
+              type="tel"
+              inputmode="numeric"
+              pattern="[0-9\s]{3}"
+              autocomplete="cc-csc"
+              maxlength="3"
+              placeholder="e.g. 123" />
+            <span aria-label="input error" class="input-error-text"></span>
           </label>
           <button id="submit-btn" type="submit">Confirm</button>
         </form>
