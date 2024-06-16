@@ -204,11 +204,16 @@ label > input {
   align-items: center;
   background: center / contain no-repeat url("../images/bg-card-back.png");
   z-index: 0;
+
+  left: clamp(4.5rem, 0.3979rem + 17.5023vw, 16.15rem);
+  top: clamp(1.9rem, -7.7479rem + 41.1643vw, 29.3rem);
+  width: clamp(17.9rem, 14.3085rem + 15.3239vw, 28.1rem);
+  height: clamp(10.1rem, 8.1986rem + 8.1127vw, 15.5rem);
   /* Mobile */
-  left: 4.5rem;
-  top: 1.9rem;
-  width: 17.9rem;
-  height: 10.1rem;
+  /* left: 4.5rem; */
+  /* top: 1.9rem; */
+  /* width: 17.9rem; */
+  /* height: 10.1rem; */
   /* Desktop */
   /* left: 16.15rem; */
   /* top: 29.3rem; */
