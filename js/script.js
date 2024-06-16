@@ -69,7 +69,7 @@ submitBtn.addEventListener("click", (e) => {
   e.preventDefault();
   const labs = document.querySelectorAll("label");
   const form = document.getElementById("card-form");
-  const completeDiv = document.getElementById("complete-div");
+  const completeDiv = document.querySelector("complete-div");
   const formDiv = document.getElementById("form-con");
 
   for (const lab of labs) {
