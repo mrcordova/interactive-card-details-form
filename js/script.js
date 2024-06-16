@@ -1,11 +1,11 @@
-const cleaveZen = window.cleaveZen;
-const {
-  formatCreditCard,
-  getCreditCardType,
-  registerCursorTracker,
-  DefaultCreditCardDelimiter,
-  unformatCreditCard,
-} = cleaveZen;
+// const cleaveZen = window.cleaveZen;
+// const {
+//   formatCreditCard,
+//   getCreditCardType,
+//   registerCursorTracker,
+//   DefaultCreditCardDelimiter,
+//   unformatCreditCard,
+// } = cleaveZen;
 
 const input = document.getElementById("card-num");
 const nameInput = document.getElementById("card-name");
