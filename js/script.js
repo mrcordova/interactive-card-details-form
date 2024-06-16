@@ -9,6 +9,7 @@ const {
 
 const input = document.getElementById("card-num");
 const nameInput = document.getElementById("card-name");
+const cvcInput = document.getElementById("cvc");
 const expMInput = document.getElementById("exp-date-m");
 const expYInput = document.getElementById("exp-date-y");
 
@@ -32,7 +33,12 @@ input.addEventListener("input", (e) => {
 
 nameInput.addEventListener("input", (e) => {
   const displayName = document.getElementById("front-card-name");
-  displayName.textContent = nameInput.value.toUpperCase();
+  displayName.textContent = nameInput.value.toUpperCase() || "JANE APPLESEED";
+});
+
+cvcInput.addEventListener("input", (e) => {
+  const displayCvc = document.getElementById("back-card-cvc");
+  displayCvc.textContent = cvcInput.value || "000";
 });
 
 expMInput.addEventListener("input", (e) => {
