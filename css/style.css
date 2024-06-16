@@ -38,6 +38,8 @@ main {
 }
 .input-error-text {
   color: var(--red-input-errors);
+}
+.input-error-hide {
   display: none;
 }
 #form-con {

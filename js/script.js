@@ -12,7 +12,13 @@ const nameInput = document.getElementById("card-name");
 const cvcInput = document.getElementById("cvc");
 const expMInput = document.getElementById("exp-date-m");
 const expYInput = document.getElementById("exp-date-y");
-
+const submitBtn = document.getElementById("submit-btn");
+const errorObj = {
+  valueMissing: "Can't be blank",
+  patternMismatch: "Wrong format, numbers only",
+  tooLong: "exceeds the allowed amount of charactors",
+  tooShort: "input too short",
+};
 const formatNumber = (number) =>
   number.split("").reduce((seed, next, index) => {
     if (index !== 0 && !(index % 4)) seed += " ";
@@ -57,4 +63,24 @@ expYInput.addEventListener("input", (e) => {
     displayDate.textContent.substring(0, displayDate.textContent.indexOf("/")) +
     "/" +
     (expYInput.value || "00");
+});
+
+submitBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  const labs = document.querySelectorAll("label");
+
+  for (const lab of labs) {
+    const inputs = lab.querySelectorAll("input");
+    const span = lab.querySelector("span");
+
+    for (const input of inputs) {
+      input.classList.toggle("input-error-border", !input.checkValidity());
+      span.classList.toggle("input-error-hide", input.checkValidity());
+      for (const key in errorObj) {
+        if (input.validity[key]) {
+          span.textContent = errorObj[key];
+        }
+      }
+    }
+  }
 });
