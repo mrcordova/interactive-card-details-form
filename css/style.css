@@ -223,13 +223,20 @@ label > input {
 #back-card-cvc {
   color: var(--white);
   margin: auto;
-  /* Mobile */
-  font-size: 0.6rem;
-  height: 1rem;
-  width: 13.5rem;
-  text-align: right;
+
+  font-size: clamp(0.6rem, 0.4768rem + 0.5258vw, 0.95rem);
   letter-spacing: 0.1rem;
+  text-align: right;
   vertical-align: middle;
+  width: clamp(13.5rem, 11.0352rem + 10.5164vw, 20.5rem);
+  height: clamp(1rem, 0.7535rem + 1.0516vw, 1.7rem);
+  /* Mobile */
+  /* font-size: 0.6rem; */
+  /* height: 1rem; */
+  /* width: 13.5rem; */
+  /* text-align: right; */
+  /* letter-spacing: 0.1rem; */
+  /* vertical-align: middle; */
   /* Desktop */
   /* font-size: 0.95rem; */
   /* height: 1.7rem; */
