@@ -3,6 +3,12 @@
   --light-grayish-violet: hsl(270, 3%, 87%);
   --dark-grayish-violet: hsl(279, 6%, 55%);
   --very-dark-violet: hsl(278, 68%, 11%);
+
+  --active-input-border: linear-gradient(
+    0deg in hsl shorter hue hsl(249, 99%, 64%),
+    hsl(278, 94%, 30%)
+  );
+  --red-input-errors: hsl(0, 100%, 66%);
 }
 
 .space-grotesk-500 {
@@ -32,13 +38,17 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* Mobile */
+  /* margin-block-start: 1.7rem; */
+  /* margin-inline-start: 1.5rem; */
+  /* margin-inline-end: 1.5rem; */
+
+  margin-block-start: clamp(0rem, 2.2986rem + -2.554vw, 1.7rem);
+  margin-inline-start: clamp(1.5rem, -5.6479rem + 30.4977vw, 21.8rem);
+  margin-inline-end: clamp(1.5rem, -2.9718rem + 19.0798vw, 14.2rem);
   /* Desktop */
   /* margin-inline-start: 21.8rem; */
   /* margin-inline-end: 14.2rem; */
-  /* Mobile */
-  margin-block-start: 1.7rem;
-  margin-inline-start: 1.5rem;
-  margin-inline-end: 1.5rem;
 }
 #card-form {
   display: grid;
