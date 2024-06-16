@@ -36,11 +36,9 @@ main {
   /* margin-inline-start: 21.8rem; */
   /* margin-inline-end: 14.2rem; */
   /* Mobile */
-  margin-inline-start: 0rem;
-  margin-inline-end: 0rem;
-
-  /* grid-row: 1;
-  grid-column: 2; */
+  margin-block-start: 1.7rem;
+  margin-inline-start: 1.5rem;
+  margin-inline-end: 1.5rem;
 }
 #card-form {
   display: grid;
