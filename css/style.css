@@ -5,7 +5,7 @@
   --very-dark-violet: hsl(278, 68%, 11%);
 
   --active-input-border: linear-gradient(
-    0deg in hsl shorter hue hsl(249, 99%, 64%),
+    hsl(249, 99%, 64%),
     hsl(278, 94%, 30%)
   );
   --red-input-errors: hsl(0, 100%, 66%);
@@ -77,7 +77,13 @@ label > input {
   border-radius: 8px;
   border: 1px solid var(--light-grayish-violet);
 }
+  cursor: pointer;
 
+  background: linear-gradient(white, white) padding-box,
+    var(--active-input-border) border-box;
+  border-radius: 8px;
+  border: 1px solid transparent;
+}
 #card-display {
   position: relative;
   background-color: var(--very-dark-violet);
