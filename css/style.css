@@ -44,8 +44,10 @@ main {
   display: grid;
   grid-template-rows: repeat(4, minmax(0, 1fr));
   grid-template-columns: repeat(4, minmax(0, 1fr));
-
-  gap: 1.5rem;
+  /* Mobile */
+  gap: 1.2rem;
+  /* Desktop */
+  /* gap: 1.5rem; */
 }
 
 label {
@@ -67,6 +69,8 @@ label > input {
 #card-display {
   position: relative;
   background-color: var(--very-dark-violet);
+
+  background: center / cover no-repeat url("../images/bg-main-mobile.png");
 
   /* grid-row: 1;
   grid-column: 1; */
@@ -218,6 +222,7 @@ label > input {
     grid-template-columns: 1fr 2fr;
   }
   #card-display {
+    background: center / cover no-repeat url("../images/bg-main-desktop.png");
     grid-row: 1;
     grid-column: 1;
   }
