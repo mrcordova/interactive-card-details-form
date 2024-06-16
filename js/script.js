@@ -8,6 +8,7 @@ const {
 } = cleaveZen;
 
 const input = document.getElementById("card-num");
+const nameInput = document.getElementById("card-name");
 const expMInput = document.getElementById("exp-date-m");
 const expYInput = document.getElementById("exp-date-y");
 
@@ -29,6 +30,11 @@ input.addEventListener("input", (e) => {
   }`;
 });
 
+nameInput.addEventListener("input", (e) => {
+  const displayName = document.getElementById("front-card-name");
+  displayName.textContent = nameInput.value.toUpperCase();
+});
+
 expMInput.addEventListener("input", (e) => {
   const displayMon = document.getElementById("front-card-date");
   console.log(expYInput.value || "00");
@@ -37,6 +43,7 @@ expMInput.addEventListener("input", (e) => {
     displayMon.textContent.slice(0, Math.min(expMInput.value.length, 2))
   }/${expYInput.value || "00"}`;
 });
+
 expYInput.addEventListener("input", (e) => {
   const displayMon = document.getElementById("front-card-date");
   displayMon.textContent = `${expMInput.value || "00"}/${
